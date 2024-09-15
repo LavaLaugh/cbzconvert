@@ -31,7 +31,7 @@ for file in path:
     folder = file.replace(".cbz", "")
 
     print("INFO: Converting CBZ " + folder)
-    os.system("cbconvert convert --format avif --quality 48 --no-nonimage=true --outdir output/ " + file)
+    os.system("cbconvert convert --format " + format + " --quality " + quality + " --no-nonimage=true --outdir output/ " + file)
 
     index += 1
     shutil.rmtree(folder)
