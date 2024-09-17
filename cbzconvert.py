@@ -34,5 +34,3 @@ for file in path:
     os.system("cbconvert convert --format " + format + " --quality " + quality + " --no-nonimage=true --outdir output/ " + file)
 
     index += 1
-    shutil.rmtree(folder)
-    os.remove(zip)
