@@ -18,7 +18,7 @@ else:
     sys.exit(0)
 
 
-print("INFO: Getting all EPUB files...")
+print("INFO: Getting all CBZ files...")
 path = glob.glob("*.cbz")
 path.sort()
 
